@@ -678,6 +678,7 @@ Defines a simple inductor component
 interface SourceSimpleInductor extends SourceComponentBase {
   ftype: "simple_inductor"
   inductance: number
+  display_inductance?: string
   max_current_rating?: number
 }
 ```
@@ -1677,6 +1678,7 @@ interface PcbPanel {
   width: Length
   height: Length
   center: Point
+  thickness: Length
   covered_with_solder_mask: boolean
 }
 ```
